@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GeoQuiz-kotlin</string>
+    <string name="question_text">Canberra is the capital of Australia</string>
+</resources>

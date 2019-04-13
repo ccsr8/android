@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 toast = Toast.makeText(MainActivity.this,
                         R.string.correct_toast,
-                        Toast.LENGTH_LONG);
+                        Toast.LENGTH_SHORT);
 
-                toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL, 0, 0);
+                toast.setGravity(Gravity.TOP | Gravity.CENTER_HORIZONTAL, 0, 0);
                 toast.show();
             }
         });
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                         R.string.incorrect_toast,
                         Toast.LENGTH_SHORT);
 
-                toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL, 0, 0);
+                toast.setGravity(Gravity.TOP | Gravity.CENTER_HORIZONTAL, 0, 0);
                 toast.show();
             }
         });
