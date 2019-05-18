@@ -4,6 +4,7 @@ import android.content.Context;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class CrimeLab {
 
@@ -18,6 +19,12 @@ public class CrimeLab {
 
     private CrimeLab(Context context) {
         mCrimes = new ArrayList<>();
+        for (int i = 0; i < 100; i++) {
+            Crime crime = new Crime();
+            crime.setmTitle("Crime" + i);
+            crime.setmSolved(i % 2 == 0);
+            mCrimes.add(crime);
+        }
     }
 
     //endregion
@@ -36,6 +43,15 @@ public class CrimeLab {
         return mCrimes;
     }
 
+    public Crime getCrime(UUID id) {
+        for (Crime crime : mCrimes) {
+            if (crime.getmId().equals(id)) {
+                return crime;
+            }
+        }
+
+        return null;
+    }
 
     //endregion
 }
