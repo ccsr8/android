@@ -24,7 +24,7 @@ public class Crime {
 
     //region [getter, setter]
 
-    public String getmTitle() {
+    public String getTitle() {
         return mTitle;
     }
 
