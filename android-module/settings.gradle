@@ -1,1 +1,4 @@
 include ':app'
+include ':libraries:actions'
+
+includeFlat 'features', 'libraries'
